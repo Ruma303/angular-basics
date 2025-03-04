@@ -1,0 +1,7 @@
+.welcome {
+    width: fit-content;
+    color: black;
+    background-color: greenyellow;
+    padding: .5em 1em;
+    border-radius: 16px;
+}

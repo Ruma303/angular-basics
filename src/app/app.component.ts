@@ -17,4 +17,8 @@ import { AboutComponent } from './about/about.component';
 })
 export class AppComponent {
   title = 'Componenti Angular';
+
+  data = {
+    input: "Valore di default"
+  };
 }
