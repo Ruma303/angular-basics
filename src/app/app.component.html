@@ -169,9 +169,9 @@
 <main class="main">
     <div class="content">
         <h1>{{ title }}</h1>
-        <section>
-            <input [value]="data.input" type="text" name="">
-            <input [value]="'Testo inline'" type="text" >
+        <section class="flex flex-col gap-2">
+            <input [value]="data.input" type="text" class="text-pink-700 border-2 border-stone-600 rounded-md px-1">
+            <input [value]="'Testo inline'" type="text" class="border-2 border-stone-600 rounded-md px-1">
             <app-welcome></app-welcome>
             <app-about />
         </section>
