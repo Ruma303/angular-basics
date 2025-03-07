@@ -1,8 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Course } from '../interfaces/course';
 
 @Component({
-    selector: 'app-course-card',
+    selector: 'course-card',
     imports: [],
     templateUrl: './course-card.component.html',
     styleUrl: './course-card.component.css'
@@ -51,4 +51,12 @@ export class CourseCardComponent {
         enrolledStudents: 0
     };
 
+    // Indicare che questo componente emette questo evento
+    @Output()
+    courseBought = new EventEmitter<Course>();
+
+    onButtonClicked(course: Course) {
+        console.log("Course bought!");
+        this.courseBought.emit(course);
+    }
 }
