@@ -169,18 +169,12 @@
 <main class="main w-full h-full flex flex-col items-center">
     <div class="content flex flex-col gap-2">
         <section class="flex flex-col gap-2">
-            <h1>{{ title }}</h1>
+            <h1 *ngIf="title">{{ title }}</h1>
             <input [value]="data.input" type="text" class="text-pink-700 border-2 border-stone-600 rounded-md px-1">
             <input [value]="'Testo inline'" type="text" class="border-2 border-stone-600 rounded-md px-1">
             <app-welcome></app-welcome>
             <app-about />
         </section>
-        <!-- <section class="flex flex-col items-center gap-2">
-            <course-card [name]="course1.name" [description]="course1.description" [price]="course1.price"/>
-            <course-card [name]="course2.name" [description]="course2.description" [price]="course2.price"/>
-            <course-card [name]="course3.name" [description]="course3.description" [price]="course3.price"/>
-        </section>-->
-
         <section class="flex flex-wrap items-center gap-8">
             <course-card [course]="course1"/>
             <course-card [course]="course2"/>
