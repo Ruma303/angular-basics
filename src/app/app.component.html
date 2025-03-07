@@ -167,13 +167,24 @@
 </style>
 
 <main class="main">
-    <div class="content">
-        <h1>{{ title }}</h1>
+    <div class="content flex flex-col gap-2">
         <section class="flex flex-col gap-2">
+            <h1>{{ title }}</h1>
             <input [value]="data.input" type="text" class="text-pink-700 border-2 border-stone-600 rounded-md px-1">
             <input [value]="'Testo inline'" type="text" class="border-2 border-stone-600 rounded-md px-1">
             <app-welcome></app-welcome>
             <app-about />
+        </section>
+        <!-- <section class="flex flex-col items-center gap-2">
+            <app-course-card [name]="course1.name" [description]="course1.description" [price]="course1.price"/>
+            <app-course-card [name]="course2.name" [description]="course2.description" [price]="course2.price"/>
+            <app-course-card [name]="course3.name" [description]="course3.description" [price]="course3.price"/>
+        </section>-->
+
+        <section class="flex flex-col items-center gap-2">
+            <app-course-card [course]="course1"/>
+            <app-course-card [course]="course2"/>
+            <app-course-card [course]="course3"/>
         </section>
     </div>
 </main>

@@ -1,0 +1,122 @@
+export const COURSES = [
+    {
+        id: 1,
+        name: 'Introduction to JavaScript',
+        description: 'Learn the fundamentals of JavaScript programming',
+        imageUrl: 'https://fakeimg.pl/400x240',
+        duration: '8 weeks',
+        level: 'Beginner',
+        price: 49.99,
+        instructor: 'John Smith',
+        rating: 4.5,
+        enrolledStudents: 1250
+    },
+    {
+        id: 2,
+        name: 'Python for Data Science',
+        description: 'Master Python programming for data analysis and visualization',
+        imageUrl: 'https://fakeimg.pl/400x240',
+        duration: '10 weeks',
+        level: 'Intermediate',
+        price: 69.99,
+        instructor: 'Sarah Johnson',
+        rating: 4.8,
+        enrolledStudents: 2100
+    },
+    {
+        id: 3,
+        name: 'Web Development Bootcamp',
+        description: 'Complete guide to modern web development with HTML, CSS, and JavaScript',
+        imageUrl: 'https://fakeimg.pl/400x240',
+        duration: '12 weeks',
+        level: 'Beginner',
+        price: 89.99,
+        instructor: 'Mike Wilson',
+        rating: 4.7,
+        enrolledStudents: 1800
+    },
+    {
+        id: 4,
+        name: 'React.js Masterclass',
+        description: 'Build modern web applications with React.js',
+        imageUrl: 'https://fakeimg.pl/400x240',
+        duration: '8 weeks',
+        level: 'Intermediate',
+        price: 79.99,
+        instructor: 'Emily Brown',
+        rating: 4.6,
+        enrolledStudents: 1500
+    },
+    {
+        id: 5,
+        name: 'Machine Learning Fundamentals',
+        description: 'Introduction to machine learning algorithms and applications',
+        imageUrl: 'https://fakeimg.pl/400x240',
+        duration: '10 weeks',
+        level: 'Advanced',
+        price: 99.99,
+        instructor: 'David Chen',
+        rating: 4.9,
+        enrolledStudents: 950
+    },
+    {
+        id: 6,
+        name: 'Mobile App Development',
+        description: 'Learn to build iOS and Android apps with React Native',
+        imageUrl: 'https://fakeimg.pl/400x240',
+        duration: '10 weeks',
+        level: 'Intermediate',
+        price: 84.99,
+        instructor: 'Lisa Anderson',
+        rating: 4.4,
+        enrolledStudents: 1100
+    },
+    {
+        id: 7,
+        name: 'Database Design',
+        description: 'Master SQL and NoSQL database design principles',
+        imageUrl: 'https://fakeimg.pl/400x240',
+        duration: '6 weeks',
+        level: 'Intermediate',
+        price: 59.99,
+        instructor: 'Robert Taylor',
+        rating: 4.3,
+        enrolledStudents: 800
+    },
+    {
+        id: 8,
+        name: 'Cloud Computing',
+        description: 'Learn AWS, Azure, and Google Cloud platforms',
+        imageUrl: 'https://fakeimg.pl/400x240',
+        duration: '8 weeks',
+        level: 'Advanced',
+        price: 94.99,
+        instructor: 'Jennifer Lee',
+        rating: 4.7,
+        enrolledStudents: 1300
+    },
+    {
+        id: 9,
+        name: 'Cybersecurity Basics',
+        description: 'Introduction to network security and ethical hacking',
+        imageUrl: 'https://fakeimg.pl/400x240',
+        duration: '8 weeks',
+        level: 'Beginner',
+        price: 74.99,
+        instructor: 'Tom Martinez',
+        rating: 4.6,
+        enrolledStudents: 950
+    },
+    {
+        id: 10,
+        name: 'UI/UX Design',
+        description: 'Master user interface and user experience design principles',
+        imageUrl: 'https://fakeimg.pl/400x240',
+        duration: '6 weeks',
+        level: 'Beginner',
+        price: 64.99,
+        instructor: 'Amanda White',
+        rating: 4.8,
+        enrolledStudents: 1600
+    }
+]
