@@ -169,17 +169,30 @@
 <main class="main w-full h-full flex flex-col items-center">
     <div class="content flex flex-col gap-2">
         <section class="flex flex-col gap-2">
-            <h1 *ngIf="title">{{ title }}</h1>
+            @if (title) {
+                <h1>{{ title }}</h1>
+            } @else {
+                <h2>Nessun titolo :(</h2>
+            }
             <input [value]="data.input" type="text" class="text-pink-700 border-2 border-stone-600 rounded-md px-1">
             <input [value]="'Testo inline'" type="text" class="border-2 border-stone-600 rounded-md px-1">
             <app-welcome></app-welcome>
             <app-about />
         </section>
         <section class="flex flex-wrap items-center gap-8">
-            <course-card [course]="course1"/>
-            <course-card [course]="course2"/>
-            <course-card (courseBought)="onCardClicked($event)" [course]="course3"/>
-            <course-card (click)="onCardClicked($event)" [course]="course4"/>
+            @for (course of courses; track course.id) {
+                <course-card [course]="course"
+                @let i = $index
+                @let f = $first
+                @let l = $last
+                @let e = $even
+                @let o = $odd
+                @let c = $count
+                (courseBought)="onCardClicked($event)" />
+            }
+            @empty {
+                <p>No courses available</p>
+            }
         </section>
     </div>
 </main>

@@ -15,10 +15,8 @@ export class AppComponent {
     data = {
         input: "Valore di default"
     };
-    course1 = COURSES[0];
-    course2 = COURSES[1];
-    course3 = COURSES[2];
-    course4 = COURSES[3];
+
+    courses = COURSES;
 
     onCardClicked(course: any) {
         console.log("Card clicked", course);
